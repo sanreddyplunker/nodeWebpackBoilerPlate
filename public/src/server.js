@@ -11,10 +11,10 @@ app.get('/',(req,res)=>{
 });
 
 app.get('/getNode',(req,res)=>{
-    res.send('returning from node');
+    res.send({message:'returning from node'});
 });
 
-app.listen(3000, "192.168.31.184",() => {
+app.listen(3000,() => {
     console.log('listening UpResume')
 
 })
